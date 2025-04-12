@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AICE Event Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="AICE Logo">
+            <h1>AICE <span>Events</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="#">My Dashboard</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button class="login-btn">Login</button>
+            <button class="signup-btn">Sign Up</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Manage Events at<br>Anand International College</h2>
+            <p>Create, manage and join events happening around your campus</p>
+            <button class="explore-btn">Explore Events</button>
+        </div>
+        <div class="hero-image">
+            <img src="photo.png" alt="Event Illustration">
+        </div>
+    </section>
+
+    <section class="upcoming-events">
+        <h2>Upcoming Events</h2>
+        <div class="event-cards">
+            <div class="event-card">
+                <div class="event-date">
+                    <span class="day">15</span>
+                    <span class="month">APR</span>
+                </div>
+                <div class="event-info">
+                    <h3>Tech Hackathon 2025</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Main Auditorium</p>
+                    <p class="time"><i class="fas fa-clock"></i> 9:00 AM - 6:00 PM</p>
+                    <div class="tags">
+                        <span>Technology</span>
+                        <span>Competition</span>
+                    </div>
+                </div>
+                <button class="register-btn">Register</button>
+            </div>
+            
+            <div class="event-card">
+                <div class="event-date">
+                    <span class="day">20</span>
+                    <span class="month">APR</span>
+                </div>
+                <div class="event-info">
+                    <h3>Cultural Festival</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> College Grounds</p>
+                    <p class="time"><i class="fas fa-clock"></i> 5:00 PM - 10:00 PM</p>
+                    <div class="tags">
+                        <span>Cultural</span>
+                        <span>Festival</span>
+                    </div>
+                </div>
+                <button class="register-btn">Register</button>
+            </div>
+            
+            <div class="event-card">
+                <div class="event-date">
+                    <span class="day">25</span>
+                    <span class="month">APR</span>
+                </div>
+                <div class="event-info">
+                    <h3>Workshop on AI</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> CS Department</p>
+                    <p class="time"><i class="fas fa-clock"></i> 2:00 PM - 4:00 PM</p>
+                    <div class="tags">
+                        <span>Workshop</span>
+                        <span>AI</span>
+                    </div>
+                </div>
+                <button class="register-btn">Register</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Features</h2>
+        <div class="feature-cards">
+            <div class="feature-card">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>Event Creation</h3>
+                <p>Create and manage events with ease</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-user-plus"></i>
+                <h3>Registration</h3>
+                <p>Simple registration process for participants</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-bar"></i>
+                <h3>Analytics</h3>
+                <p>Track participation and engagement</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-bell"></i>
+                <h3>Notifications</h3>
+                <p>Get alerts for upcoming events</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/aice-logo.png" alt="AICE Logo">
+                <h3>AICE Events</h3>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Calendar</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Anand International College of Engineering, Jaipur</p>
+                <p><i class="fas fa-phone"></i> +91 1234567890</p>
+                <p><i class="fas fa-envelope"></i> events@aice.edu.in</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 AICE Events. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="login-modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" id="showSignup">Sign Up</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
